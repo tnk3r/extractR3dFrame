@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Currently Extracts the first frame from
 # each _001.R3D file found in a directory,
 # for VR Template Creation,
@@ -13,8 +12,7 @@ fi
 
 folder="$1"
 out="$2"
-project="/Volumes/TANK/JOBS/BP-KOREA/$today"
-mkdir -p "$project"/frames
+mkdir -p $out/frames
 
 for R3D in $(find $folder -iname "*001.R3D"); do
 
